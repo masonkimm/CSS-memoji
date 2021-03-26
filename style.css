@@ -115,3 +115,26 @@ body {
 .ear:first-child {
   border-radius: 100% 0 0 100%;
 }
+
+.hair {
+  width: 300px;
+  height: 125px;
+  background-color: hsl(40, 25%, 5%);
+  position: absolute;
+  margin-bottom: 300px;
+  border-radius: 55% 50% 20% 20%;
+}
+
+.hair::before,
+.hair::after {
+  content: '';
+  position: absolute;
+  background-color: hsl(40, 25%, 5%);
+  width: 10px;
+  height: 100px;
+  transform: translateY(100%);
+  border-radius: 20%;
+}
+.hair::after {
+  right: 0;
+}

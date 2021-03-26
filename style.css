@@ -96,3 +96,22 @@ body {
   margin-top: 220px;
   background-color: white;
 }
+
+.ears {
+  /* needs to be > .header */
+  position: absolute;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+.ear {
+  width: 25px;
+  height: 65px;
+  border: 2px solid hsl(19, 39%, 66%);
+  background-color: hsl(19, 54%, 81%);
+  border-radius: 0 100% 100% 0;
+}
+.ear:first-child {
+  border-radius: 100% 0 0 100%;
+}

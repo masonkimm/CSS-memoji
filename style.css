@@ -24,7 +24,8 @@ body {
 }
 
 /* eyes */
-.eyes {
+.eyes,
+.eyebrows {
   /* w = .eyeWidth * 3 = 195 */
   width: 195px;
   position: absolute;
@@ -66,4 +67,12 @@ body {
   border-radius: 100%;
   margin-left: 10px;
   margin-bottom: 5px;
+}
+
+.brow {
+  width: 68px;
+  height: 25px;
+  border-top: 10px solid hsl(42, 21%, 9%);
+  border-radius: 100%;
+  margin-bottom: 50px;
 }

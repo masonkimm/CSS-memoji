@@ -1,4 +1,69 @@
-* {
-  margin: 0;
-  padding: 0;
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(200, 50%, 12%);
+}
+/* head */
+.head {
+  background-color: hsl(19, 76%, 88%);
+  width: 300px;
+  height: 340px;
+  /* egg shape */
+  border-radius: 70% 70% 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* eyes */
+.eyes {
+  /* w = .eyeWidth * 3 = 195 */
+  width: 195px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye {
+  background-color: rgb(245, 238, 238);
+  width: 65px;
+  height: 40px;
+  border-radius: 100%;
+  border-top: 3px solid hsl(19, 46%, 68%);
+  border-bottom: 3px solid hsl(19, 46%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.eye::before {
+  content: '';
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-color: hsl(39, 78%, 11%);
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  background-color: hsl(40, 25%, 5%);
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
